@@ -24,15 +24,13 @@ def translate(phrase)
 
     #check for capitals
     capital_letters.each do |letter|  
-      
       if word[0] == letter
-
         recap = true
         word = word.downcase
       end
     end
-    #check vowels
 
+    #check vowels
     vowels.each do |letter|
       if word[0] == letter
         starts_vowel = true
@@ -83,11 +81,7 @@ def translate(phrase)
       new_word += mod_word + "ay"
     end
   end
-  
-  # word.slice(1,0)+text[0]+"ay" if starts_cons1
-  
-  
- 
+
  return new_word.lstrip
 end
 
