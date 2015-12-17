@@ -67,6 +67,11 @@ describe "#translate" do
 
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
+  it "re-capitalizes the capitalized words" do
+    s = translate("the Quick brown Fox")
+    s.should == "ethay Ickquay ownbray Oxfay"
+  end
+
   # * retain the punctuation from the original phrase
 
 end
